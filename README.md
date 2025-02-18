@@ -1,8 +1,8 @@
-##Web Scraper##
+**Web Scrapper**
 
 This is a basic Python web scraper that extracts data from web pages and saves it to a CSV file. The scraper uses `requests` for making HTTP requests, `BeautifulSoup` for parsing HTML, and `csv` to save the extracted data.
 
-Features
+**Features**
 
 - Fetches web pages via HTTP requests.
 - Extracts the title, links, and paragraphs from each page.
@@ -10,7 +10,7 @@ Features
 - Handles HTTP errors and logs them for debugging.
 - Provides customizable delays between requests to prevent overloading the server.
 
-Requirements
+**Requirements**
 
 - Python 3.x
 - `requests` library
@@ -22,7 +22,7 @@ You can install the required libraries using pip:
 
 pip install requests beautifulsoup4
 
-Usage
+**Usage**
 
 Initialize the Web Scraper
 
@@ -33,7 +33,7 @@ scraper = WebScraper(base_url="https://example.com", delay=1)
 - `base_url`: The root URL of the website you want to scrape.
 - `delay`: The time (in seconds) to wait between requests (default is 1 second).
 
-Scrape URLs
+**Scrape URLs**
 
 You can specify a list of relative URLs (e.g., `"/about"`, `"/contact"`) to scrape:
 
@@ -43,7 +43,7 @@ scraper.scrape(urls_to_scrape, "output.csv")
 - `urls`: A list of relative URLs you want to scrape.
 - `output_file`: The filename to save the extracted data (default is `scraped_data.csv`).
 
-CSV Output
+**CSV Output**
 
 The extracted data includes the following fields:
 
@@ -53,7 +53,7 @@ The extracted data includes the following fields:
 
 The data is saved to a CSV file with the following columns: `title`, `links`, and `paragraphs`.
 
-Example Output
+**Example Output**
 
 A sample CSV output might look like this:
 
@@ -64,10 +64,7 @@ Error Handling and Logging
 
 The scraper logs any errors encountered during the scraping process, such as network issues or parsing errors. Logs are written to the console with timestamps.
 
-Contributing
+**Contributing**
 
 If you want to contribute to this project, feel free to fork the repository and submit a pull request. Make sure to follow the Python code style and include tests for any new features.
 
-License
-
-This project is open source and available under the MIT License (LICENSE).
