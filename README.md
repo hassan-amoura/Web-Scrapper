@@ -1,4 +1,4 @@
-##Web Scraper
+##Web Scraper##
 
 This is a basic Python web scraper that extracts data from web pages and saves it to a CSV file. The scraper uses `requests` for making HTTP requests, `BeautifulSoup` for parsing HTML, and `csv` to save the extracted data.
 
